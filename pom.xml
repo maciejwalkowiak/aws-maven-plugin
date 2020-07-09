@@ -6,6 +6,8 @@
         <version>0.1</version>
     </parent>
 
+	<!-- group id set to make it possible to use this artifact with jitpack.io from https://github.com/maciejwalkowiak/aws-maven-plugin repository	-->
+	<groupId>com.github.maciejwalkowiak</groupId>
     <artifactId>aws-maven-plugin</artifactId>
     <packaging>maven-plugin</packaging>
     <version>0.2.26-SNAPSHOT</version>
@@ -132,7 +134,7 @@
                 </configuration>
             </plugin>
             <plugin>
-                <!-- override default to fix a bug in earlier version (bug 
+                <!-- override default to fix a bug in earlier version (bug
                     seen in 3.2) -->
                 <artifactId>maven-plugin-plugin</artifactId>
                 <version>3.5</version>
@@ -142,7 +144,7 @@
                 <artifactId>maven-site-plugin</artifactId>
                 <version>3.7.1</version>
             </plugin>
-            
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-project-info-reports-plugin</artifactId>
@@ -151,7 +153,7 @@
         </plugins>
         <pluginManagement>
             <plugins>
-                <!--This plugin's configuration is used to store Eclipse 
+                <!--This plugin's configuration is used to store Eclipse
                     m2e settings only. It has no influence on the Maven build itself. -->
                 <plugin>
                     <groupId>org.eclipse.m2e</groupId>
